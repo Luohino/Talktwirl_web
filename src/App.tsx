@@ -9,7 +9,7 @@ import Home from './screens/home';
 
 const App: React.FC = () => {
   return (
-    <Router>
+    <Router basename="/Talktwirl_web/"> {/* Add basename prop */}
       <Routes>
         <Route path="/" element={<Navigate to="/login" replace />} />
         <Route path="/login" element={<Login />} />
@@ -24,4 +24,4 @@ const App: React.FC = () => {
   );
 };
 
-export default App; 
+export default App;
